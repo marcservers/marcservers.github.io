@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Join MarcSMP</title>
+    <style>
+        :root {
+            --bg-dark: #1e3a8a;
+            --bg-card: #2563eb;
+            --text-white: #ffffff;
+            --text-muted: #bfdbfe;
+            --accent-blue: #60a5fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes pageFadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background-color: rgba(30, 58, 138, 0.9);
+            border-bottom: 2px solid var(--bg-card);
+            padding: 1.5rem 2rem;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .marc-text {
+            color: var(--accent-blue);
+        }
+        
+        .smp-text {
+            color: var(--text-white);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem 2rem 2rem;
+            animation: pageFadeIn 0.6s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto 4rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            animation: pageFadeIn 0.8s ease-out;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .ip-box {
+            background-color: var(--bg-dark);
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-white);
+            text-align: center;
+            margin-bottom: 2rem;
+            word-break: break-all;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .steps li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 24px;
+            height: 24px;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .steps li strong {
+            color: var(--text-white);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 2px solid var(--bg-card);
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .card { padding: 2rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="marc-text">Marc</span><span class="smp-text">SMP</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1><span class="marc-text">Marc</span><span class="smp-text">SMP</span></h1>
+        <p>How to join the server on Java and Bedrock edition.</p>
+    </section>
+
+    <main class="container">
+        
+        <div class="card">
+            <h2>Java Edition</h2>
+            <div class="ip-box">marcsmp.abrdns.com</div>
+            <ul class="steps">
+                <li>Open <strong>Minecraft Java Edition</strong>.</li>
+                <li>Click <strong>Multiplayer</strong>.</li>
+                <li>Click <strong>Add Server</strong>.</li>
+                <li>Enter the IP address above and set the <strong>name</strong> to MarcSMP.</li>
+                <li>Click <strong>Done</strong> and join.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Bedrock Edition</h2>
+            <div class="ip-box">bedrock.marcsmp.abrdns.com</div>
+            <ul class="steps">
+                <li>Open <strong>Minecraft</strong>.</li>
+                <li>Go to the <strong>Creator Experience</strong>.</li>
+                <li>Click <strong>Add Server</strong>.</li>
+                <li>Enter the IP address above and set the <strong>name</strong> to MarcSMP.</li>
+                <li>Change the port to <strong>61060</strong> and click <strong>Play</strong>.</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2026 5jp1</p>
+    </footer>
+
+</body>
+</html>
